@@ -91,4 +91,38 @@ i {
     background: url('./assets/hero-large.jpg');
     background-size: cover;
     background-position: center;
+    color: white;
+}
+
+.hero .wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero p {
+    max-width: 800px;
+}
+
+.button-container {
+    margin: 40px 0 80px;
+}
+
+button {
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 5px 35px;
+    color: white;
+    background-color: #161616;
+    text-transform: uppercase;
+    font-size: .9em;
+    margin-right: 20px;
+}
+
+.red-button {
+    color: white;
+    background-color: #e01e3c;
+    border: 2px solid #e01e3c;
 }
