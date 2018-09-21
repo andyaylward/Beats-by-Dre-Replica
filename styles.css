@@ -4,6 +4,10 @@ black - #161616
 red - #e01e3c
 white - #fffff
 */
+body {
+    background-color: #F7F7F8;
+}
+
 
 h1, h2, h3 {
     font-family: 'Nunito Sans', sans-serif;
@@ -125,4 +129,128 @@ button {
     color: white;
     background-color: #e01e3c;
     border: 2px solid #e01e3c;
+}
+
+/* Featured Products */
+
+.featured-products {
+ margin: 120px auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card {
+    margin: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 350px;
+    padding: 10px;
+    transition: .5s;
+}
+
+img {
+    height: 75%;
+    width: 75%;
+}
+
+.product p {
+    font-weight: bold;
+}
+
+@media (max-width: 1150px) {
+    .product {
+        height: 300px;
+        width: 300px;
+    }
+
+    .product p, .product span {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 975px) {
+    .card-wrapper {
+        flex-direction: column;
+    }
+
+    .product {
+        height: 400px;
+        width: 400px;
+    }
+
+    .product p, .product span {
+        font-size: 100%;
+    }
+}
+
+
+/* Showcase Products */
+
+.showcase-products {
+    margin: 80px 0;
+}
+
+.showcase-product {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 80px;
+}
+
+.showcase-img {
+    background: url('./assets/feature-product-1.jpg');
+    background-size: cover;
+    background-position: 100% 50%;
+    height: 100%;
+    width:85%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.showcase-details {
+    height: 280px;
+    width: 400px;
+    background: white;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    padding: 20px;
+}
+
+@media (max-width: 975px) {
+    .showcase-img {
+        width:100%;
+        height: 400px;
+        top:0;
+    }
+
+    .showcase-details {
+        width: 100%;
+        height: 210px;
+        bottom: 0;
+    }
+
+    .showcase-product {
+        height: 610px;
+    }
 }
