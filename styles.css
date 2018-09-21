@@ -27,3 +27,19 @@ h3 {
 button {
     font-family: 'Oswald', sans-serif;
 }
+
+/* Header */
+
+header {
+    background-color: #161616;
+    height: 200px;
+}
+
+/* Hero */
+
+.hero {
+    height: 600px;
+    background: url('./assets/hero-large.jpg');
+    background-size: cover;
+    background-position: center;
+}
