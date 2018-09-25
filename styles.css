@@ -26,6 +26,16 @@ h3 {
     font-size: 36px;
 }
 
+h4 {
+    font-size: 20px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 button {
     font-family: 'Oswald', sans-serif;
 }
@@ -254,3 +264,56 @@ img {
         height: 610px;
     }
 }
+
+.footer {
+    background-color: #222;
+    height: 200px;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-card {
+    flex: 1;
+    margin: 2px;
+}
+
+footer a, footer p {
+    font-family: 'Oswald', sans-serif;
+    color: #999;
+    font-weight: 400px;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+footer li {
+    padding: 5px 0;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+    max-width: 125px;
+    margin-bottom: 40px;
+}
+
+.social-icons i {
+    color: #999;
+}
+
+@media (max-width: 735px) {
+    footer .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-card {
+        max-width: 300px;
+        width: 90%;    
+        margin-bottom: 20px;
+    }
+}
+
+
