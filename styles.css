@@ -8,7 +8,6 @@ body {
     background-color: #F7F7F8;
 }
 
-
 h1, h2, h3 {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
@@ -97,6 +96,42 @@ header .wrapper {
 i {
     color: white;
 }
+
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    right:0;
+    height: 100vH;
+    width: 200px;
+    background: white;
+    transition: .3s;
+}
+
+.mobile-menu a {
+    font-family: 'Oswald', sans-serif;
+    color: #999;
+    font-weight: 400px;
+    text-transform: uppercase;
+}
+
+.closed {
+    transform: translate(200px, 0px);
+}
+
+@media (max-width: 756px) {
+    .menu .desktop-nav {
+        display: none;
+    }
+
+    .icon-container .search-icon {
+        display: none;
+    }
+
+    .icon-container {
+        flex: 0 16px;
+    }
+}
+
 
 /* Hero */
 

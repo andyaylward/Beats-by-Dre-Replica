@@ -14,10 +14,22 @@
 
     <!-- * * * * * * * * * * HEADER * * * * * * * * * * -->
     <header>
+        <div class="mobile-menu closed" id='mobile-menu'>
+            <button id='close-button'>CLOSE
+                <ul>
+                    <li><a href="">Headphones</a></li>
+                    <li><a href="">Earphones</a></li>
+                    <li><a href="">Speakers</a></li>
+                    <li><a href="">Accesories</a></li>
+                    <li><a href="">Collaborations</a></li>
+                    <li><a href="">Beatsstudio</a></li>
+                </ul>
+            </button>
+        </div>
         <div class="wrapper">
             <div class='menu'>
                 <div class="logo"></div>
-                <ul>
+                <ul class='desktop-nav'>
                     <li><a href="">Headphones</a></li>
                     <li><a href="">Earphones</a></li>
                     <li><a href="">Speakers</a></li>
@@ -25,8 +37,8 @@
                 </ul>
             </div>
             <div class="icon-container">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-search"></i>
+                <i class="fas fa-bars" id='open-button'></i>
+                <i class="fas fa-search search-icon"></i>
             </div>
         </div>
     </header>
@@ -151,6 +163,6 @@
             </div>
         </div>
     </footer>
-    
+    <script src="app.js"></script>
 </body>
 </html>
